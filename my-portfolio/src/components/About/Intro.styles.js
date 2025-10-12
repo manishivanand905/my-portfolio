@@ -90,33 +90,33 @@ export const SkillsHeader = styled.h3`
   margin-bottom: 1rem;
 `;
 
-export const SkillsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1rem;
+export const SkillsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  justify-content: center;
 `;
 
-export const SkillItem = styled(motion.div)`
+export const SkillTag = styled(motion.div)`
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: ${({ theme }) => (theme.body === '#FFF' ? 'rgba(0,0,0,0.05)' : 'rgba(255,255,255,0.1)')};
+  color: ${({ theme }) => theme.text};
+  font-weight: 500;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: ${({ theme }) => theme.text};
-  transition: background 0.3s ease;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: ${({ theme }) => (theme.body === '#FFF' ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.2)')};
+    transform: translateY(-3px);
   }
 
   i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #81caec;
-  }
-
-  span {
-    font-weight: 500;
   }
 `;

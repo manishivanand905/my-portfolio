@@ -1,9 +1,14 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { breakpoints } from "../../styles/theme";
 
 export const MilestonesContainer = styled.div`
   padding: 50px 20px;
   text-align: center;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 export const SectionTitle = styled.h2`
@@ -18,7 +23,7 @@ export const Timeline = styled.div`
   max-width: 800px;
   margin: 0 auto;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 6px;
     background-color: ${({ theme }) => theme.text}22;
@@ -47,9 +52,9 @@ export const Milestone = styled(motion.div)`
 
 export const MilestoneIcon = styled.div`
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: -20px;
+  width: 35px;
+  height: 35px;
+  right: -18px;
   top: 50%;
   transform: translateY(-50%);
   background-color: ${({ theme }) => theme.text};
@@ -58,11 +63,11 @@ export const MilestoneIcon = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: ${({ theme }) => theme.body};
 
   ${Milestone}:nth-child(even) & {
-    left: -20px;
+    left: -18px;
   }
 `;
 
@@ -76,13 +81,13 @@ export const MilestoneContent = styled.div`
 `;
 
 export const Institution = styled.h3`
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: ${({ theme }) => theme.text};
   margin-bottom: 10px;
 `;
 
 export const Achievement = styled.p`
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: ${({ theme }) => theme.textSecondary};
 `;

@@ -6,8 +6,8 @@ import {
   TextContainer,
   BioParagraph,
   SkillsHeader,
-  SkillsGrid,
-  SkillItem,
+  SkillsContainer,
+  SkillTag,
 } from "./Intro.styles";
 
 const skills = [
@@ -60,18 +60,18 @@ const Intro = () => {
         <SkillsHeader>
           Here are a few technologies I've been working with recently:
         </SkillsHeader>
-        <SkillsGrid>
+        <SkillsContainer>
           {skills.map((skill) => (
-            <SkillItem
+            <SkillTag
               key={skill.name}
               whileHover={{ y: -5, scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
               <i className={skill.icon}></i>
               <span>{skill.name}</span>
-            </SkillItem>
+            </SkillTag>
           ))}
-        </SkillsGrid>
+        </SkillsContainer>
       </TextContainer>
     </IntroContainer>
   );

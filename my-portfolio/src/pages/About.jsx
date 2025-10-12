@@ -40,7 +40,7 @@ const About = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
       >
-        <ResumeButton href="/Mani_Shivanand_Resume.pdf" download>
+        <ResumeButton href="/Mani Shivanand.pdf" download>
           <i className="fas fa-download"></i>
           <span>Download Resume</span>
         </ResumeButton>

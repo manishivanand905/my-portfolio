@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const ProjectCard = styled.div`
+export const Card = styled.div`
   min-height: 420px;
   display: flex;
   flex-direction: column;
