@@ -1,6 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { educationalMilestones } from '../../data/educationalMilestones';
+import React from "react";
+import { educationalMilestones } from "../../data/educationalMilestones";
 import {
   MilestonesContainer,
   SectionTitle,
@@ -10,7 +9,7 @@ import {
   MilestoneContent,
   Institution,
   Achievement,
-} from './EducationalMilestones.styles';
+} from "./EducationalMilestones.styles";
 
 const EducationalMilestones = () => {
   return (
