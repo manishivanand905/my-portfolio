@@ -63,10 +63,10 @@ const ContactForm = () => {
 
     emailjs
       .send(
-        "service_lia8hcs", // Replace with your EmailJS Service ID
-        "template_00bn52k", // Replace with your EmailJS Template ID
+        "service_lia8hcs",
+        "template_yqbpdkj",
         templateParams,
-        "n9QScOQCbSuEjs2SP" // Replace with your EmailJS Public Key
+        "n9QScOQCbSuEjs2SP"
       )
       .then(
         (response) => {

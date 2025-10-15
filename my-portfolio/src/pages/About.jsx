@@ -1,5 +1,6 @@
 import Intro from "../components/About/Intro";
 import EducationalMilestones from "../components/About/EducationalMilestones";
+import MobileEducation from "../components/About/MobileEducation";
 import Experience from "../components/About/Experience";
 
 import {
@@ -29,6 +30,7 @@ const About = () => {
 
       {/* Education Section */}
       <EducationalMilestones />
+      <MobileEducation />
 
       {/* Experience Section */}
       <Experience />
@@ -50,3 +52,4 @@ const About = () => {
 };
 
 export default About;
+

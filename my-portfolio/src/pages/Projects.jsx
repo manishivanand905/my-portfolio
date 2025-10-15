@@ -31,6 +31,51 @@ const projectsData = [
     liveLink: "https://rental-management-system-1.onrender.com/",
     image: "rentEasy.jpg",
   },
+  {
+    title: "Match Game",
+    description:
+      "The Match Game is a fast-paced image-matching game built with React.js, designed to test the user’s ability to quickly identify and match images under a countdown timer. This interactive game dynamically updates based on user interactions, ensuring an engaging and challenging experience.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink: "https://github.com/manishivanand905/Match-Game",
+    liveLink: "https://mgame1.ccbp.tech/",
+    image: "matchgame.jpg",
+  },
+  {
+    title: "Digital Timer App",
+    description:
+      "The Digital Timer App is a user-friendly application that allows users to set, start, pause, and reset a countdown timer. Built with React.js, it features an intuitive interface and responsive design, making it easy to manage time effectively for various tasks and activities.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink: "https://github.com/manishivanand905/Digital-Timer-App",
+    liveLink: "https://digitimerapp1.ccbp.tech/",
+    image: "digitaltimer.jpg",
+  },
+  {
+    title: "Stopwatch App",
+    description:
+      "The Stopwatch App is a simple and efficient tool for measuring elapsed time, featuring start, stop, and reset functionalities. Built with React.js, it offers a clean and intuitive interface, making it easy for users to track time for various activities.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink: "https://github.com/manishivanand905/Stopwatch",
+    liveLink: "https://stopwatch010.ccbp.tech/",
+    image: "stopwatch.jpg",
+  },
+  {
+    title: "Password Manager",
+    description:
+      "The Password Manager is a secure application that helps users store and manage their passwords efficiently. It features a user-friendly interface, allowing users to add, view, and delete passwords, with an emphasis on security and ease of use.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink: "https://github.com/manishivanand905/Password-Manager",
+    liveLink: "https://passmanager10.ccbp.tech/",
+    image: "passwordmanager.jpg",
+  },
+  {
+    title: "IPL Dashboard App",
+    description:
+      "The IPL Dashboard App is a comprehensive platform that provides detailed statistics and insights about the Indian Premier League (IPL) cricket tournament. It features an intuitive interface for users to explore team performances, player statistics, and match outcomes, making it a valuable resource for cricket enthusiasts.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink: "https://github.com/manishivanand905/IPL-Dashboard-App",
+    liveLink: "https://ipldashboardaa.ccbp.tech/",
+    image: "ipldashboard.jpg",
+  },
 ];
 
 // Styled Components
@@ -61,8 +106,16 @@ const SectionTitle = styled(motion.h2)`
 
 const ProjectsGrid = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 const ProjectCard = styled(motion.div)`
