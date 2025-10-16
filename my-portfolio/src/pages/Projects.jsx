@@ -76,6 +76,52 @@ const projectsData = [
     liveLink: "https://ipldashboardaa.ccbp.tech/",
     image: "ipldashboard.jpg",
   },
+  {
+    title: "Fetch And Routing Practice",
+    description:
+      "The Fetch And Routing Practice project is a web application that demonstrates the use of data fetching and client-side routing in React. It features dynamic content loading and seamless navigation between different views, providing an interactive user experience.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink:
+      "https://github.com/manishivanand905/Fetch-And-Routing-Practice",
+    liveLink: "https://fetchrout001.ccbp.tech/",
+    image: "fetchrouting.jpg",
+  },
+  {
+    title: "Cryptocurrency Tracker",
+    description:
+      "The Cryptocurrency Tracker is a web application that provides temporary information on various cryptocurrencies, including their prices, market trends, and historical data. Built with React.js, it offers an intuitive interface for users to monitor and analyze the performance of different digital assets in the crypto market.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink: "https://github.com/manishivanand905/Cryptocurrency-Tracker",
+    liveLink: "https://cryptotrackk.ccbp.tech/",
+    image: "cryptotracker.jpg",
+  },
+  {
+    title: "Emoji Game",
+    description:
+      "The Emoji Game is an interactive web application that challenges users to click on unique emojis without repeating any selections. Built with React.js, it features a dynamic interface that tracks user scores and provides instant feedback, making it a fun and engaging experience for players of all ages.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink: "https://github.com/manishivanand905/Emoji-Game",
+    liveLink: "https://emojigame501.ccbp.tech/",
+    image: "emojigame.jpg",
+  },
+  {
+    title: "FAQS app",
+    description:
+      "The FAQS App is a user-friendly web application that provides answers to frequently asked questions in an organized manner. Built with React.js, it features an intuitive interface that allows users to easily navigate through various topics and find the information they need quickly.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink: "https://github.com/manishivanand905/Faqs-App",
+    liveLink: "https://frequentaqsapp.ccbp.tech/",
+    image: "faqsapp.jpg",
+  },
+  {
+    title: "Registration Form",
+    description:
+      "The Registration Form is a simple and efficient web application that allows users to sign up by providing their personal information. Built with React.js, it features a clean and intuitive interface, making it easy for users to complete the registration process quickly and securely.",
+    techStack: ["React", "JavaScript", "CSS3"],
+    githubLink: "https://github.com/manishivanand905/Registration-Form",
+    liveLink: "https://applfomrs01.ccbp.tech/",
+    image: "registrationform.jpg",
+  },
 ];
 
 // Styled Components
